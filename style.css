@@ -1,0 +1,485 @@
+@media all and (min-width: 1046px) {
+  * {
+    box-sizing: content-box;
+  }
+
+  html {
+    font-family: Poppins;
+    /* font-weight: bold; */
+  }
+
+  body {
+    background-image: url("https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149989178.jpg?w=740&t=st=1686738897~exp=1686739497~hmac=ffa244be353a8192133a149c48b1cb72952d9f641ba82b42862c357f9694976b");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    height: 100%;
+    margin: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .side {
+    z-index: 1;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    border-radius: 25px 10px 10px 25px;
+    background-color: #40128b;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    margin: 0%;
+    overflow: hidden;
+    height: 100%;
+    /* box-shadow: 10px 10px 10px #0d0d0e79; */
+  }
+
+  .main {
+    flex: 1 1 auto;
+    border-radius: 10px 25px 25px 25px;
+    background-color: #ffe79b;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    /* box-shadow: 10px 10px 10px #1a1a1aa8; */
+  }
+
+  .wellcome {
+    display: flex;
+    color: #ffecec;
+    text-align: left;
+    margin-left: 96px;
+  }
+
+  .wel {
+    font-size: small;
+  }
+
+  .logo {
+    align-self: center;
+    margin-top: 28px;
+    float: left;
+    clip-path: circle(50%);
+    height: 58px;
+    opacity: 0;
+    animation: bounce1 1s ease-in-out .5s 1 forwards;
+  }
+
+  @keyframes bounce1 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .main_head {
+    font-weight: lighter;
+    padding: 10px;
+  }
+
+  .side_box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  p {
+    margin-top: -3px;
+    padding: 10px;
+    color: #f4d3d3;
+  }
+
+  .img {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    animation: bounce2 1s ease-out .5s 1 forwards;
+  }
+
+  @keyframes bounce2 {
+    0% {
+      opacity: 0;
+      bottom: -233px;
+    }
+
+    100% {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+
+  /* MAIN */
+
+  input[type="text"],
+  input[type="email"],
+  input[type="breed"],
+  select[name="gender"],
+  select[name="age"],
+  select[name="weigh"] {
+    margin-top: 5px;
+    border: 1px solid #8294c4;
+    border-radius: 10px 10px 10px 10px;
+    width: 250px;
+    padding: 15px;
+    text-align: left;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="breed"]:focus,
+  select[name="gender"]:focus,
+  select[name="age"]:focus,
+  select[name="weigh"]:focus {
+    width: 280px;
+    transition: width 0.2s ease 0s;
+    outline: none;
+    border: 2px solid #8294c4;
+  }
+
+  input[type="text"]:not(:focus),
+  input[type="email"]:not(:focus),
+  input[type="breed"]:not(:focus),
+  select[name="gender"]:not(:focus),
+  select[name="age"]:not(:focus),
+  select[name="weigh"]:not(:focus) {
+    width: 250px;
+    transition: width 0.2s ease 0s;
+  }
+
+  .up_box,
+  .midlle_box,
+  .bottom_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+    row-gap: 18px;
+  }
+
+  .up_box_left,
+  .up_box_right,
+  .midlle_box_left,
+  .midlle_box_right,
+  .bottom_box_left,
+  .bottom_box_right {
+    text-align: left;
+    width: auto;
+    margin-bottom: 18px;
+  }
+
+  option {
+    color: #232597;
+    background-color: #ffe89b8f;
+    border: 5px solid whitesmoke;
+  }
+
+  textarea[name="msg"] {
+    margin-top: 5px;
+    border: 1px solid #8294c4;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+  }
+
+  textarea[name="msg"]:focus {
+    width: 250px;
+    transition: width 0.2s ease 0s;
+    outline: none;
+    border: 2px solid #8294c4;
+  }
+
+  textarea[name="msg"]:not(:focus) {
+    width: 200px;
+    transition: width 0.2s ease 0s;
+  }
+
+  .msg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .msg_full {
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    border: 1px solid #cf84fa;
+    background-color: #dca5fc;
+    border-radius: 20px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    transition: width 0.2s ease-out 0s, background-color 0.2s ease-out 0s,
+      border 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  }
+
+  button[type="submit"]:hover {
+    cursor: pointer;
+    border: 1px solid #c061f7;
+    background-color: #c061f7b2;
+    /* transform: scale(1.1); */
+    width: 180px;
+    transition: width 0.2s ease-out 0s, background-color 0.2s ease-out 0s,
+      border 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 1045px) {
+  * {
+    box-sizing: content-box;
+  }
+
+  html {
+    font-family: Poppins;
+    /* font-weight: bold; */
+  }
+
+  body {
+    background-image: url("https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149989178.jpg?w=740&t=st=1686738897~exp=1686739497~hmac=ffa244be353a8192133a149c48b1cb72952d9f641ba82b42862c357f9694976b");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    height: 100%;
+    margin: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .side {
+    z-index: 1;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    border-radius: 25px;
+    background-color: #40128b;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    margin: 0%;
+    overflow: hidden;
+    /* height: 100%; */
+    /* box-shadow: 10px 10px 10px #0d0d0e79; */
+  }
+
+  .main {
+    flex: 1 1 auto;
+    border-radius: 25px;
+    background-color: #ffe79b;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    /* box-shadow: 10px 10px 10px #1a1a1aa8; */
+  }
+
+  .wellcome {
+    display: flex;
+    color: #ffecec;
+    text-align: left;
+    margin-left: 96px;
+  }
+
+  .logo {
+    align-self: center;
+    margin-top: 18px;
+    float: left;
+    clip-path: circle(50%);
+    height: 58px;
+    margin-left: 8px;
+    opacity: 0;
+    animation: boun 1s ease-in-out 1s 1 forwards;
+  }
+
+  @keyframes boun {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .main_head {
+    font-weight: lighter;
+    padding: 10px;
+  }
+
+  .side_box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  p {
+    margin-top: -3px;
+    padding: 10px;
+    color: #f4d3d3;
+  }
+
+  .img {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    animation: bounce3 1s ease-out 0s 1;
+  }
+
+  @keyframes bounce3 {
+    0% {
+      opacity: 0;
+      bottom: -233px;
+    }
+
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+
+  /* MAIN */
+
+  input[type="text"],
+  input[type="email"],
+  input[type="breed"],
+  select[name="gender"],
+  select[name="age"],
+  select[name="weigh"] {
+    margin-top: 5px;
+    border: 1px solid #8294c4;
+    border-radius: 10px 10px 10px 10px;
+    width: 200px;
+    padding: 15px;
+    text-align: left;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="breed"]:focus,
+  select[name="gender"]:focus,
+  select[name="age"]:focus,
+  select[name="weigh"]:focus {
+    width: 210px;
+    transition: width 0.2s ease 0s;
+    outline: none;
+    border: 2px solid #8294c4 !important;
+  }
+
+  input[type="text"]:not(:focus),
+  input[type="email"]:not(:focus),
+  input[type="breed"]:not(:focus),
+  select[name="gender"]:not(:focus),
+  select[name="age"]:not(:focus),
+  select[name="weigh"]:not(:focus) {
+    width: 200px;
+    transition: width 0.2s ease 0s;
+  }
+
+  .up_box,
+  .midlle_box,
+  .bottom_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+    row-gap: 18px;
+  }
+
+  .up_box_left,
+  .up_box_right,
+  .midlle_box_left,
+  .midlle_box_right,
+  .bottom_box_left,
+  .bottom_box_right {
+    text-align: left;
+    width: auto;
+    margin-bottom: 18px;
+  }
+
+  option {
+    color: #232597;
+    background-color: #ffe89b8f;
+    border: 5px solid whitesmoke;
+  }
+
+  textarea[name="msg"] {
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+  }
+
+  textarea[name="msg"]:focus {
+    width: 210px;
+    transition: width 0.2s ease 0s;
+    outline: none;
+  }
+
+  textarea[name="msg"]:not(:focus) {
+    width: 200px;
+    transition: width 0.2s ease 0s;
+  }
+
+  .msg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .msg_full {
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    border: 1px solid #cf84fa;
+    background-color: #dca5fc;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    transition: width 0.2s ease-out 0s, background-color 0.2s ease-out 0s,
+      border 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  }
+
+  button[type="submit"]:hover {
+    cursor: pointer;
+    border: 1px solid #c061f7;
+    background-color: #c061f7b2;
+    /* transform: scale(1.1); */
+    width: 180px;
+    transition: width 0.2s ease-out 0s, background-color 0.2s ease-out 0s,
+      border 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  }
+}
